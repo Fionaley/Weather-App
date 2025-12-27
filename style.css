@@ -1,0 +1,109 @@
+*{
+  box-sizing:border-box;
+  font-family:Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#4facfe,#00f2fe);
+  transition:background .3s;
+}
+
+body.night{
+  background:linear-gradient(135deg,#0f172a,#020617);
+}
+
+.app{
+  width:360px;
+  background:#ffffffcc;
+  padding:16px;
+  border-radius:16px;
+  text-align:center;
+  box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+body.night .app{
+  background:#020617cc;
+  color:#e5e7eb;
+}
+
+.controls{
+  display:flex;
+  gap:6px;
+  margin-top:10px;
+}
+
+.controls input{
+  flex:1;
+  padding:8px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.controls button{
+  padding:8px 10px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:#2563eb;
+  color:#fff;
+}
+
+.current img{
+  width:80px;
+}
+
+.forecast{
+  margin-top:16px;
+}
+
+#forecastContainer{
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+}
+
+.forecast-card{
+  min-width:70px;
+  padding:8px;
+  background:#2563eb;
+  color:white;
+  border-radius:10px;
+  font-size:12px;
+}
+
+body.night .forecast-card{
+  background:#1e293b;
+}
+
+footer{
+  margin-top:12px;
+  font-size:12px;
+  opacity:.7;
+}
+.ampm-icon{
+  margin-left:6px;
+  font-size:16px;
+}
+body.night .ampm-icon{
+  filter: drop-shadow(0 0 6px #38bdf8);
+}
+.hero{
+  text-align:center;
+  margin-bottom:12px;
+}
+
+.hero h2{
+  margin:0;
+  font-size:22px;
+}
+
+.hero p{
+  margin:4px 0 0;
+  font-size:13px;
+  opacity:0.8;
+}
